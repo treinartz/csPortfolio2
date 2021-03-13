@@ -1,0 +1,251 @@
+/* -------------------------------------- 
+Table of contents 
+1. menu and banner
+2. page layout with flex box 
+3. text and image format classes 
+4. js file fomatting 
+https://yoksel.github.io/flex-cheatsheet/#section-flex-grow
+-------------------------------------- */
+
+/*menu and banner*/
+#bannerimg {
+    width: 100%;
+    height: 10vw;
+
+}
+
+#main-nav a {
+    color: #f6f7f8;
+    background: #230A59;
+    height: 64px;
+
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    border: 5px solid #000000;
+}
+
+#main-nav a:hover {
+    background: #3E38F2;
+}
+
+#main-nav {}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 95%;
+    width: 250px;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: #eee;
+    font-size: 22px;
+}
+
+h1 {
+    border: 5px solid #000000;
+    font-family: lato;
+    font-size: 72px;
+}
+
+
+.box {
+    flex-grow: 1;
+    background: #8C3A27;
+    color: #8C3A27;
+    text-align: center;
+    padding: 10px;
+    border: 10px solid #000000;
+}
+
+/*page layout with flexbox*/
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    border: none;
+
+
+    /*main (left right) axis*/
+    /*justify-content: stretch;*/
+    justify-content: flex-start;
+    /*justify-content: flex-end;*/
+    /*justify-content: center;*/
+    /*justify-content: stretch;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-evenly;*/
+    /*justify-content: space-end;*/
+    /*cross (up down) axis*/
+    align-items: space-evenly;
+    /*align-items:stretch;*/
+    /*align-items:space-between;*/
+    /*align-items:space-around;*/
+    /*align-items:end;*/
+    /*align-items:space-evenly;*/
+    ;
+
+
+}
+
+.flexbox-item {
+    margin: 1px;
+    padding: 1px;
+    border: 3px solid #333;
+    font-size: 28px;
+    background-color: #829FD9;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+    flex-basis: 65%;
+    background-color: #829FD9;
+    font-family: ubuntu;
+    font-size: 18px;
+    justify-items: center;
+}
+
+.flexbox-item-2 {
+    flex-basis: 35%;
+    font-family: 'Notable', sans-serif;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    min-width: 300px;
+}
+
+/*not used yet*/
+.flexbox-item-4 {
+    align-items: flex-end;
+    min-height: 300px;
+    min-width: 300px;
+    flex: 1;
+    height: 400px;
+    border: 5px solid green;
+    padding: 15px;
+}
+
+/*not used yet*/
+.another-container {
+    display: flex;
+    border: 5px solid #000000;
+    align-content: space-around;
+    padding: 40px;
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: 28px;
+
+}
+
+/*text and image format classes*/
+
+
+body {
+
+    background-color: lightgrey;
+}
+
+img {
+    display: flex;
+    justify-content: stretch;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+}
+
+div {
+    display: block;
+}
+
+
+
+/*js file formatting*/
+
+
+#sketch-holder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*#230A59*/
+/*#3E38F2*/
+/*#0029FA*/
+/*#5C73F2*/
+/*#829FD9*/
+
+/* Color Theme Swatches in Hex */
+.Miniature-Size-Landscape--season1--1-hex {
+    color: #B1BF49;
+}
+
+.Miniature-Size-Landscape--season1--2-hex {
+    color: #D99923;
+}
+
+.Miniature-Size-Landscape--season1--3-hex {
+    color: #D97B29;
+}
+
+.Miniature-Size-Landscape--season1--4-hex {
+    color: #8C3A27;
+}
+
+.Miniature-Size-Landscape--season1--5-hex {
+    color: #D9483B;
+}
